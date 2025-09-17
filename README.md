@@ -1,90 +1,66 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+🌐 MyWebsite Project
+📖 Overview
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+This is a responsive multipage website built using HTML5, CSS3, and JavaScript.
+It demonstrates front-end web development skills, DOM manipulation, animations, and interactivity.
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+The project includes:
 
----
+🏠 Home Page – with a hero section, greeting message, and dark mode toggle
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+ℹ️ About Page – details about the project with animations
 
-Before you write any code, take time to plan:
+📩 Contact Page – interactive form with JavaScript validation
 
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
+✨ Features
 
-**Goal:** Show intentional structure and user journey across the site.
+✅ Responsive Design (mobile, tablet, desktop)
 
----
+🌙 Dark Mode Toggle (DOM manipulation)
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+⏱ Dynamic Greeting (based on time of day)
 
-Using your plan, begin building:
+📝 Contact Form Validation (JavaScript)
 
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
+🎨 CSS Animations & Transitions (fade, slide, hover effects)
 
-Each page should:
+🖼 Modern Layout with shadows, borders, and hover effects
 
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
+📂 Project Structure
+my-website/
+│── index.html        # Home page
+│── about.html        # About page
+│── contact.html      # Contact page
+│── style.css         # Styling (CSS3)
+│── script.js         # Interactivity (JavaScript)
+│── images/           # Images and assets
+│── README.md         # Documentation
 
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+🚀 Deployment
 
----
+This project is deployed online and can be accessed here:
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+👉 Live Demo: https://musirmoses.github.io/plp-webfinal-project/
 
-Before deployment, refactor your project to follow production-friendly practices:
+🔧 Deployment Options
 
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
 
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+Netlify → https://plpfinalwebdev.netlify.app/
 
----
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
 
-Once your project is complete, choose a method to **host your site online**.
+🛠 Technologies Used
 
-You can use:
+HTML5 → Semantic structure
 
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
+CSS3 → Styling, transitions, animations
 
-Deploy your project and confirm that:
+JavaScript (ES6) → DOM interactivity & form validation
 
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
+GitHub Pages / Netlify / Vercel → Deployment
 
-**Goal:** Publish your work online and make it accessible to the world.
 
----
+👨‍💻 Author
 
-## Deliverables
-
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
-
----
-
-## Outcome
-
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+Developed by Moses Odhiambo
+📧 Email: musaodhiambo@gmail.com
