@@ -1,14 +1,16 @@
 /* General Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
 }
 
 header {
   background: #333;
   color: #fff;
   padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 nav {
@@ -21,6 +23,7 @@ nav {
 
 .logo {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .nav-links {
@@ -32,24 +35,94 @@ nav {
 .nav-links a {
   color: white;
   text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  border: 1px solid white;
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
 }
 
 .nav-links a.active {
   border-bottom: 2px solid #fff;
 }
 
+#darkModeToggle {
+  background: #444;
+  color: white;
+  border: 1px solid #888;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#darkModeToggle:hover {
+  background: #666;
+}
+
+/* Hero Section */
 .hero {
   text-align: center;
-  padding: 50px 20px;
-  background: #f4f4f4;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f0f0f0, #ddd);
+  border-bottom: 2px solid #ccc;
+  animation: fadeIn 1s ease-in;
+}
+
+.cta-btn {
+  background: #333;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 30px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #555;
+  transform: scale(1.05);
 }
 
 .content {
-  padding: 20px;
-  max-width: 800px;
+  padding: 30px;
+  max-width: 900px;
   margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
 
+.content:hover {
+  transform: translateY(-5px);
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+.slide-in {
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideIn {
+  from {transform: translateX(-100%);}
+  to {transform: translateX(0);}
+}
+
+/* Form */
 form {
   display: flex;
   flex-direction: column;
@@ -59,6 +132,8 @@ form {
 input, textarea, button {
   padding: 10px;
   font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
 }
 
 button {
@@ -66,24 +141,46 @@ button {
   color: #fff;
   border: none;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 button:hover {
   background: #555;
+  transform: scale(1.05);
 }
 
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   background: #333;
   color: #fff;
   margin-top: 20px;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode header {
+  background: #222;
+}
+
+.dark-mode .content {
+  background: #1e1e1e;
+  border: 1px solid #555;
+}
+
+.dark-mode footer {
+  background: #222;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
   nav {
     flex-direction: column;
+    gap: 10px;
   }
   .nav-links {
     flex-direction: column;
