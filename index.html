@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | My Website</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <!-- Navbar -->
@@ -16,14 +17,22 @@
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <button id="darkModeToggle">🌙 Dark Mode</button>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h2>Welcome to My Website</h2>
-    <p>This is a simple responsive multipage site built with HTML, CSS, and JavaScript.</p>
-    <button onclick="alert('Thanks for visiting!')">Click Me</button>
+    <h2 id="greeting">Welcome!</h2>
+    <p>This is a modern, interactive, responsive website built with <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>JavaScript</strong>. It features animations, transitions, and a working contact form.</p>
+    <button class="cta-btn">Get Started</button>
+  </section>
+
+  <!-- Extra Content -->
+  <section class="content">
+    <h2>Why This Website is Awesome</h2>
+    <p>We’ve added interactive features like <em>dark mode</em>, dynamic greetings, hover effects, and smooth animations to make the browsing experience enjoyable.</p>
+    <p>Explore the <strong>About</strong> page to learn more or head to <strong>Contact</strong> to send us a message. Everything is styled responsively so it looks great on mobile, tablet, and desktop.</p>
   </section>
 
   <footer>
